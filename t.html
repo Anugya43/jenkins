@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Top Tourist Places in India</title>
+  <style>
+    /* Inline CSS - single file */
+    :root{--accent:#e8505b;--muted:#6b7280;--card-bg:#ffffff}
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:linear-gradient(180deg,#f7fafc 0%, #fff 40%);color:#111}
+    .wrap{max-width:1100px;margin:32px auto;padding:20px}
+    header{display:flex;align-items:center;gap:16px}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,#f97316,#ef4444);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    h1{margin:0;font-size:clamp(20px,3.5vw,28px)}
+    p.lead{color:var(--muted);margin:6px 0 20px}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+    .card{background:var(--card-bg);border-radius:12px;box-shadow:0 6px 18px rgba(16,24,40,0.06);overflow:hidden;display:flex;flex-direction:column;min-height:320px}
+    .card img{width:100%;height:160px;object-fit:cover;display:block}
+    .card .content{padding:14px;flex:1;display:flex;flex-direction:column}
+    .place{font-weight:700;margin:0 0 6px}
+    .meta{font-size:13px;color:var(--muted);margin-bottom:10px}
+    .desc{flex:1;color:#222;line-height:1.45;font-size:14px}
+    .cta{margin-top:12px;display:flex;justify-content:space-between;align-items:center}
+    .btn{background:var(--accent);color:white;border:none;padding:8px 12px;border-radius:9px;font-weight:600;cursor:pointer}
+    .tag{font-size:12px;color:var(--muted)}
+
+    footer{margin-top:28px;color:var(--muted);font-size:13px;text-align:center}
+
+    @media (prefers-color-scheme:dark){:root{--card-bg:#0b1220} body{background:linear-gradient(180deg,#071121 0%, #071724 40%);color:#e6eef6} .logo{color:#071121} .card{box-shadow:none} .meta{color:#9aa4b2} footer{color:#9aa4b2}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">IN</div>
+      <div>
+        <h1>India — Must-Visit Tourist Places</h1>
+        <p class="lead">A tiny showcase of iconic destinations across India. Click a card to learn more and plan your trip.</p>
+      </div>
+    </header>
+
+    <main class="grid" role="list">
+
+      <article class="card" role="listitem">
+        <img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=3f6b7e9f0f6d8d1e2a1a8b7f9f2a1c9d" alt="Taj Mahal, Agra">
+        <div class="content">
+          <h3 class="place">Taj Mahal — Agra</h3>
+          <div class="meta">Uttar Pradesh · Mughal architecture · UNESCO icon</div>
+          <p class="desc">A timeless marble mausoleum set on the Yamuna’s banks — famous for sunrise views and intricate inlay work. Best visited early morning to avoid crowds.</p>
+          <div class="cta"><span class="tag">Best time: Oct–Mar</span><button class="btn">Learn</button></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1507699622108-4be3abd695ad?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=7c2b6d5a3e5d4e8a2bcd6b9e8a1d2c3f" alt="Jaipur City Palace">
+        <div class="content">
+          <h3 class="place">Jaipur — The Pink City</h3>
+          <div class="meta">Rajasthan · Forts & palaces · Culture & shopping</div>
+          <p class="desc">Amber Fort, Hawa Mahal and colourful bazaars define Jaipur’s royal charm. Great for heritage walks, handicrafts and Rajasthani cuisine.</p>
+          <div class="cta"><span class="tag">Best time: Oct–Mar</span><button class="btn">Learn</button></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1506806732259-39c2d0268443?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=9b2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d" alt="Kerala backwaters houseboat">
+        <div class="content">
+          <h3 class="place">Kerala Backwaters — Alleppey</h3>
+          <div class="meta">Kerala · Houseboats · Tropical lagoons</div>
+          <p class="desc">Slow down on a traditional houseboat through palm-fringed canals — peaceful mornings, fresh seafood and lush landscapes make it a relaxing escape.</p>
+          <div class="cta"><span class="tag">Best time: Sep–Mar</span><button class="btn">Learn</button></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d" alt="Goa beach">
+        <div class="content">
+          <h3 class="place">Goa — Beaches & Nightlife</h3>
+          <div class="meta">Goa · Beaches · Food & parties</div>
+          <p class="desc">Sun, sand and seafood — Goa blends Portuguese history with laid-back beaches and lively nightlife. Ideal for both chill days and beach parties.</p>
+          <div class="cta"><span class="tag">Best time: Nov–Feb</span><button class="btn">Learn</button></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=2d3c4b5a6e7f8d9c0b1a2c3d4e5f6a7b" alt="Varanasi ghats">
+        <div class="content">
+          <h3 class="place">Varanasi — The Spiritual Heart</h3>
+          <div class="meta">Uttar Pradesh · Ghats & river rituals · Pilgrimage</div>
+          <p class="desc">A deeply spiritual city on the Ganges where sunrise boat rides and evening aartis offer an unforgettable cultural experience.</p>
+          <div class="cta"><span class="tag">Best time: Oct–Mar</span><button class="btn">Learn</button></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1505765052362-4c1f4b6c3b2a?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e" alt="Leh Ladakh landscape">
+        <div class="content">
+          <h3 class="place">Leh & Ladakh — High-Altitude Beauty</h3>
+          <div class="meta">Jammu & Kashmir · Mountain passes · Rugged scenery</div>
+          <p class="desc">Crisp air, dramatic mountain valleys and remote monasteries — perfect for road trips, biking and stargazing in thin, clear skies.</p>
+          <div class="cta"><span class="tag">Best time: May–Sep</span><button class="btn">Learn</button></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d" alt="Udaipur lake palaces">
+        <div class="content">
+          <h3 class="place">Udaipur — City of Lakes</h3>
+          <div class="meta">Rajasthan · Lakes & palaces · Romantic</div>
+          <p class="desc">Mirror-like lakes, ornate palaces and sunset boat rides create a romantic atmosphere — a favourite for couples and photographers.</p>
+          <div class="cta"><span class="tag">Best time: Oct–Mar</span><button class="btn">Learn</button></div>
+        </div>
+      </article>
+
+    </main>
+
+    <footer>Icons & images: Unsplash. This single-file page uses inline CSS and is responsive — feel free to copy, edit or tell me which places you want added.</footer>
+  </div>
+
+  <script>
+    // Small interactive touch: open a quick info modal (simple)
+    document.querySelectorAll('.btn').forEach((b, i)=>{
+      b.addEventListener('click', ()=>{
+        const card = b.closest('.card');
+        const title = card.querySelector('.place').innerText;
+        const desc = card.querySelector('.desc').innerText;
+        alert(title + '\n\n' + desc + '\n\n' + 'Want more details? Tell me which place and I can add a short how-to-get-there or things-to-do list.');
+      })
+    })
+  </script>
+</body>
+</html>
